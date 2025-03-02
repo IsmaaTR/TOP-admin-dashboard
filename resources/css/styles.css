@@ -27,7 +27,7 @@ body {
     display: grid;
     grid-template-rows: 50px 100px;
     padding: 10px 20px;
-    box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
 }
 
 #search-bar-container {
@@ -161,6 +161,7 @@ body {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: var(--blue-color);
 }
 
 #project-container {
@@ -171,6 +172,40 @@ body {
 #announcements-container {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    color: white;
+    padding: 20px;
+    padding-left: 0px;
+}
+
+#announcements-container > :first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+#announcements-info {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 3px 8px 2px rgba(255,255,255,0.49);
+    -moz-box-shadow: 2px 3px 8px 2px rgba(255,255,255,0.49);
+    box-shadow: 2px 3px 8px 2px rgba(255,255,255,0.49);
+}
+
+.announcement > :first-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.announcement p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+#announcements-info hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #trending-container {
